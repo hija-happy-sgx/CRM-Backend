@@ -1,0 +1,11 @@
+C:\MiniCrm\MiniCRM.Data\bin\Debug\net9.0\MiniCRM.Data.deps.json
+C:\MiniCrm\MiniCRM.Data\bin\Debug\net9.0\MiniCRM.Data.dll
+C:\MiniCrm\MiniCRM.Data\bin\Debug\net9.0\MiniCRM.Data.pdb
+C:\MiniCrm\MiniCRM.Data\obj\Debug\net9.0\MiniCRM.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\MiniCrm\MiniCRM.Data\obj\Debug\net9.0\MiniCRM.Data.AssemblyInfoInputs.cache
+C:\MiniCrm\MiniCRM.Data\obj\Debug\net9.0\MiniCRM.Data.AssemblyInfo.cs
+C:\MiniCrm\MiniCRM.Data\obj\Debug\net9.0\MiniCRM.Data.csproj.CoreCompileInputs.cache
+C:\MiniCrm\MiniCRM.Data\obj\Debug\net9.0\MiniCRM.Data.dll
+C:\MiniCrm\MiniCRM.Data\obj\Debug\net9.0\refint\MiniCRM.Data.dll
+C:\MiniCrm\MiniCRM.Data\obj\Debug\net9.0\MiniCRM.Data.pdb
+C:\MiniCrm\MiniCRM.Data\obj\Debug\net9.0\ref\MiniCRM.Data.dll
