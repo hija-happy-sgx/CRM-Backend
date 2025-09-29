@@ -65,6 +65,10 @@
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[9.0.8, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[9.0.5, )"
             }
           },
           "imports": [
@@ -184,7 +188,11 @@
         "frameworks": {
           "net9.0": {
             "targetAlias": "net9.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\MiniCrm\\MiniCRM.Core\\MiniCRM.Core.csproj": {
+                "projectPath": "C:\\MiniCrm\\MiniCRM.Core\\MiniCRM.Core.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

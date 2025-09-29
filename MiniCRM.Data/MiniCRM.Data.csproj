@@ -15,4 +15,8 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\MiniCRM.Core\MiniCRM.Core.csproj" />
+  </ItemGroup>
+
 </Project>
