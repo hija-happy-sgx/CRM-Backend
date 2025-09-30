@@ -16,7 +16,7 @@ namespace MiniCRM.Data.Context
         public DbSet<User> Users { get; set; }
         public DbSet<Lead> Leads { get; set; }
         public DbSet<Deal> Deals { get; set; }
-        public DbSet<Activity> Activites { get; set; }
+        public DbSet<Activity> Activities { get; set; }
         public DbSet<PipelineStage> PipelineStages { get; set; }
         public DbSet<CommunicationLog> CommunicationLogs { get; set; }
     }

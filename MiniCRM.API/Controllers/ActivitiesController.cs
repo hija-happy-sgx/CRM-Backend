@@ -13,12 +13,12 @@ namespace MiniCRM.API.Controllers
         public ActivitiesController(MiniCrmDbContext context) => _context = context;
 
         [HttpGet]
-        public async Task<IActionResult> GetActivities() => Ok(await _context.Activites.ToListAsync());
+        public async Task<IActionResult> GetActivities() => Ok(await _context.Activities.ToListAsync());
 
         [HttpGet("{id}")]
         public async Task<IActionResult> GetActivity(int id)
         {
-            var activity = await _context.Activites.FindAsync(id);
+            var activity = await _context.Activities.FindAsync(id);
             return activity == null ? NotFound() : Ok(activity);
         }
 
@@ -26,7 +26,7 @@ namespace MiniCRM.API.Controllers
         public async Task<IActionResult> CreateActivity([FromBody] Activity activity)
         {
             activity.CreatedDate = DateTime.Now;
-            _context.Activites.Add(activity);
+            _context.Activities.Add(activity);
             await _context.SaveChangesAsync();
             return Ok(activity);
         }
@@ -34,7 +34,7 @@ namespace MiniCRM.API.Controllers
         [HttpPut("{id}")]
         public async Task<IActionResult> UpdateActivity(int id, [FromBody] Activity activity)
         {
-            var existing = await _context.Activites.FindAsync(id);
+            var existing = await _context.Activities.FindAsync(id);
             if (existing == null) return NotFound();
 
             existing.Type = activity.Type;
@@ -50,10 +50,10 @@ namespace MiniCRM.API.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteActivity(int id)
         {
-            var activity = await _context.Activites.FindAsync(id);
+            var activity = await _context.Activities.FindAsync(id);
             if (activity == null) return NotFound();
 
-            _context.Activites.Remove(activity);
+            _context.Activities.Remove(activity);
             await _context.SaveChangesAsync();
             return Ok();
         }

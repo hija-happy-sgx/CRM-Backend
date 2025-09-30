@@ -237,6 +237,115 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "MiniCRM.API.Controllers.PipelineStagesController",
+    "Method": "GetPipelineStages",
+    "RelativePath": "api/PipelineStages",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[MiniCRM.Core.Models.PipelineStage, MiniCRM.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MiniCRM.API.Controllers.PipelineStagesController",
+    "Method": "CreatePipelineStage",
+    "RelativePath": "api/PipelineStages",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "stage",
+        "Type": "MiniCRM.Core.Models.PipelineStage",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MiniCRM.Core.Models.PipelineStage",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MiniCRM.API.Controllers.PipelineStagesController",
+    "Method": "GetPipelineStage",
+    "RelativePath": "api/PipelineStages/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MiniCRM.Core.Models.PipelineStage",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MiniCRM.API.Controllers.PipelineStagesController",
+    "Method": "UpdatePipelineStage",
+    "RelativePath": "api/PipelineStages/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "stage",
+        "Type": "MiniCRM.Core.Models.PipelineStage",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MiniCRM.API.Controllers.PipelineStagesController",
+    "Method": "DeletePipelineStage",
+    "RelativePath": "api/PipelineStages/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "MiniCRM.API.Controllers.UsersController",
     "Method": "GetUsers",
     "RelativePath": "api/Users",
